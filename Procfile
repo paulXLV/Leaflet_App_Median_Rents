@@ -1,0 +1,1 @@
+web: gunicorn queens-rent.app:app

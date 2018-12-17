@@ -1,0 +1,15 @@
+APPLE: 
+Cupertino HQ city in Santa Clara County, California
+San Jose, Santa Clara, Santa Cruz, Oakland, San Francisco-Oakland-Hayward
+Palo Alto, Santa Clara County, California, United States, in the San Francisco Bay Area.
+GOOGLE: mountain view, expanding to sunnyvale
+Amazon: seattle, also has offices in same cities as other top 10 tech companies
+
+counties to inlude:
+Alameda County*
+Los Angeles County*
+Santa Clara County*
+San Mateo County*
+San Francisco County
+King County*
+Queens County* NOTE: Zillow had mismatched two zipcodes for NEW YORK COUNTY which was corrected on Excel.
