@@ -21,7 +21,7 @@ app = Flask(__name__)
 # Use flask_pymongo to set up mongo connection
 # conn = "mongodb://localhost:27017/"
 # client = pymongo.MongoClient(conn)
-db = "mongodb://heroku_7t9dkd05:kt8li5obnhhria0qf5vvtbh1cm@ds155097.mlab.com:55097/heroku_7t9dkd05"
+db = "mongodb://heroku_7t9dkd05:kt8li5obnhhria0qf5vvtbh1cm@ds155097.mlab.com:55097/heroku_7t9dkd05/"
 # db = client.zipDB
 #db.zipDB.drop()
 all_data = "Yearly_Top3_Tech_Loc_ZRI_Hist.csv"
