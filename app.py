@@ -7,12 +7,12 @@ import pandas as pd
 import os
 import csv
 from bson.json_util import dumps
-print(MONGO_URI)
-print(uri)
-uri_key = os.environ.get("uri")
+#print(MONGO_URI)
+#print(uri)
+uri_key = os.environ.get("MONGO_URL")
 app = Flask(__name__)
 #app.config['MONGO_DBNAME'] = 
-app.config['MONGO_URI']
+app.config['MONGO_URI'] = uri_key
 mongo = PyMongo(app)
 
 # create instance of Flask app
