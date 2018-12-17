@@ -8,20 +8,20 @@ import os
 import csv
 from bson.json_util import dumps
 
-
+uri_key = os.environ.get("uri")
+app = Flask(__name__)
+#app.config['MONGO_DBNAME'] = 
+app.config['MONGO_URI'] = uri_key
+mongo = PyMongo(app)
 
 # create instance of Flask app
 
-app = Flask(__name__)
-
-
-
-
+#app = Flask(__name__)
 
 # Use flask_pymongo to set up mongo connection
 # conn = "mongodb://localhost:27017/"
 # client = pymongo.MongoClient(conn)
-db = app.config['MONGO_URI']
+#app.config['MONGO_URI']
 #"mongodb://heroku_7t9dkd05:kt8li5obnhhria0qf5vvtbh1cm@ds155097.mlab.com:55097/heroku_7t9dkd05/"
 # db = client.zipDB
 #db.zipDB.drop()
