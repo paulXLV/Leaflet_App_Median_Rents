@@ -1,1 +1,1 @@
-web: gunicorn queens-rent.app:app
+web: gunicorn app.app:app
