@@ -13,7 +13,7 @@ uri_key = os.environ.get("MONGO_URL")
 app = Flask(__name__)
 #app.config['MONGO_DBNAME'] = 
 app.config['MONGO_URI'] = uri_key
-mongo = PyMongo(app)
+db = PyMongo(app)
 
 # create instance of Flask app
 
