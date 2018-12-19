@@ -46,7 +46,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
   
 // ******************* INITIALIZE HEATMAP UNTIL USE SLIDER ***************
-d3.json("https://queens-rents.herokuapp.com/2011", function(response) {
+d3.json("/2011", function(response) {
     //var loc = response.features[1];
     //console.log(response);
     var heatArray = [];
@@ -89,7 +89,7 @@ function updateMap(loc) {
 
 function updateYear(yr) {
   if (yr > 2019 && yr < 2023) { yr = 2019};
-  d3.json("https://queens-rents.herokuapp.com/"+yr, function(response) {
+  d3.json("/"+yr, function(response) {
     //var loc = response.features[1];
     //console.log(response);
    
