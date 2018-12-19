@@ -12,9 +12,9 @@ var Icon = L.Icon.extend({
   popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
   }
 });
-var amazonIcon = new Icon({iconUrl: 'amazon-icon.png'});
-var appleIcon = new Icon({iconUrl: 'apple-icon.png'});
-var googleIcon = new Icon({iconUrl: 'google-icon.png'});
+var amazonIcon = new Icon({iconUrl: 'static/img/amazon-icon.png'});
+var appleIcon = new Icon({iconUrl: 'static/img/apple-icon.png'});
+var googleIcon = new Icon({iconUrl: 'static/img/google-icon.png'});
 
 // IMPORTANT: initialize global variable for heatmap layer to toggle between different data sets
 var heat = {};
