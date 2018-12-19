@@ -18,8 +18,10 @@ client = pymongo.MongoClient("mongodb://heroku_7t9dkd05:kt8li5obnhhria0qf5vvtbh1
 
 #"mongodb://heroku_7t9dkd05:kt8li5obnhhria0qf5vvtbh1cm@ds155097.mlab.com:55097/heroku_7t9dkd05/"
 db = client["heroku_7t9dkd05"]
-#db.zipDB.drop()
-all_data = "Yearly_Top3_Tech_Loc_ZRI_Hist.csv"
+# ****** ALREADY LOADED FILES TOTAL OF 4128 Docs at 1.09MB ********
+#db.zipColl.drop()
+#all_data = "Yearly_Top3_Tech_Loc_ZRI_Hist.csv"
+all_data = "NY_Projection_2019_2025.csv"
 all_data_pd = pd.read_csv(all_data)
 zipData = json.loads(all_data_pd.to_json(orient='records'))
 db.zipColl.insert_many(zipData)
@@ -37,4 +39,4 @@ def samples(year):
     return dumps(filterData)
                                 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run()
