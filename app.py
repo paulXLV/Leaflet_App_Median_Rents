@@ -30,8 +30,8 @@ db = client["heroku_7t9dkd05"]
 
 @app.route("/")
 def home():
-    return "ENTER /YEAR"
-    #return render_template("heatmap.html")
+    #return "ENTER /YEAR"
+    return render_template("index.html")
     
 @app.route("/<year>")
 def samples(year):
