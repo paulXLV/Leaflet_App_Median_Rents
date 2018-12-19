@@ -50,10 +50,10 @@ d3.json("https://queens-rents.herokuapp.com/2011", function(response) {
     //var loc = response.features[1];
     //console.log(response);
     var heatArray = [];
-    console.log("START: ", response.length, heatArray.length);
+    //console.log("START: ", response.length, heatArray.length);
     for (var i = 0; i < response.length; i++) {
       var location = ([response[i].lat, response[i].lon, response[i].ZRI/100]) ;
-     console.log(response[i].Year, response[i].Metro,location);
+     //console.log(response[i].Year, response[i].Metro,location);
   
       if (location) { //console.log(location[1], location[0]) *** WORKING NOW ***
         heatArray.push([location[0], location[1], location[2]]);
@@ -64,7 +64,7 @@ d3.json("https://queens-rents.herokuapp.com/2011", function(response) {
         blur: 35,
         //gradient: {0.4: 'blue', 0.65: 'red', 1: 'red'}
     }).addTo(myMap);
-    console.log("END: ", response.length, heatArray.length);
+    //console.log("END: ", response.length, heatArray.length);
 });
 
 function updateMap(loc) {
@@ -94,10 +94,10 @@ function updateYear(yr) {
     //console.log(response);
    
     var heatArray = [];
-    console.log("START UPDATE: ", response.length, heatArray.length);
+    //console.log("START UPDATE: ", response.length, heatArray.length);
     for (var i = 0; i < response.length; i++) {
       var location = ([response[i].lat, response[i].lon, response[i].ZRI/100]) ;
-      console.log(response[i].Year, response[i].Metro,location);
+      //console.log(response[i].Year, response[i].Metro,location);
   
       if (location) { //console.log(location[1], location[0]) *** WORKING NOW ***
         heatArray.push([location[0], location[1], location[2]]);
@@ -111,7 +111,6 @@ function updateYear(yr) {
       //gradient: {0.4: 'blue', 0.65: 'red', 1: 'red'}
     }).addTo(myMap);
     
-   
-    console.log("END UPDATE: ", response.length, heatArray.length);
+    //console.log("END UPDATE: ", response.length, heatArray.length);
   });
 };
