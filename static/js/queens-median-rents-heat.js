@@ -80,7 +80,7 @@ function updateMap(loc) {
       myMap.flyTo({lat: 47.615144, lng: -122.338578}, 11);
       break;
     case "Amazon HQ 2":
-      myMap.flyTo({lat: 40.7000, lng: -73.8566}, 13);
+      myMap.flyTo({lat: 40.7000, lng: -73.8566}, 11);
       break;
     case "Silicon Valley":
       myMmap.flyTo({lat: 37.5630, lng: -122.3255}, 12);
